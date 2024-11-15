@@ -25,7 +25,7 @@ rule Caddy {
 
         /*
             Match for loading the "kernel32.dll" which is a concatenation of 1 byte at a time.
-            Here the match of the string "kernel" this way is enough.
+            Here the match of the string "kernel".
         */
         $s4 = { 6B C6 45 ?? 00 C6 45 ?? /* 'k' */
                 65 C6 45 ?? 00 C6 45 ?? /* 'e' */
